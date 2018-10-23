@@ -1,0 +1,29 @@
+{
+  "name": "react-redux-retro",
+  "version": "1.0.0",
+  "description": "Connect Redux Retro to React",
+  "main": "dist/src/index.js",
+  "typings": "dist/src/index.d.ts",
+  "scripts": {
+    "build": "rm -rf dist & tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bencompton/react-redux-retro.git"
+  },
+  "author": "Ben Compton",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bencompton/react-redux-retro/issues"
+  },
+  "homepage": "https://github.com/bencompton/react-redux-retro#readme",
+  "devDependencies": {
+    "redux": "^4.0.1",
+    "typescript": "^3.1.3"
+  },
+  "dependencies": {
+    "@types/react-redux": "^6.0.9",
+    "react": "^16.5.2",
+    "react-redux": "5.0.7"
+  }
+}
