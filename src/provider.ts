@@ -10,5 +10,5 @@ export interface IProviderProps {
 export default (props: IProviderProps) => {
   (props.store.dispatch as any).actions = props.actions;
 
-  return React.createElement(Provider, { store: props.store });
+  return React.createElement(Provider, { store: props.store, ...props });
 };
