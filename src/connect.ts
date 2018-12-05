@@ -11,7 +11,7 @@ interface MapActionsToPropsFunction<TActionProps, TOwnProps> {
 export default <TStateProps = {}, TActionProps = {}, TOwnProps = {}, TMergedProps = {}, State = {}>(
   mapStateToProps: MapStateToPropsParam<TStateProps, TOwnProps, State> | null,
   mapActionsToProps: MapActionsToPropsFunction<TActionProps, TOwnProps> | null,
-  component: React.Component<TStateProps & TActionProps> | React.StatelessComponent<TStateProps & TActionProps>,
+  component: React.ComponentClass<TStateProps & TActionProps> | React.StatelessComponent<TStateProps & TActionProps>,
   options?: Options<State, TStateProps, TOwnProps, TMergedProps>  
 ) => {
   const mapDispatchToProps = (dispatch: any) => {
