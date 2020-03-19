@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Provider } from 'react-redux';
 import { Store } from 'redux';
 
-export interface IProviderProps {
+export interface IProviderProps extends React.Props<any> {
     store: Store<any>;
     actions: any;
 }
